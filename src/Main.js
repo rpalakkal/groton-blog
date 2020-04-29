@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography'
 
 import Posts from './firebase/Posts'
 import MyPosts from './firebase/MyPosts'
-import AdminPosts from './firebase/AdminPosts'
+import AdminPosts from './firebase/AdminPosts' 
 
 const theme = createMuiTheme({
     overrides: {
