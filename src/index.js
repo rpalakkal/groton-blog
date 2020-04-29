@@ -7,7 +7,9 @@ import * as serviceWorker from './serviceWorker';
 
 import Cookies from 'js-cookie';
 let auth = Cookies.get('auth')
-
+if (window.top.location != document.location) {
+  window.top.location.href = document.location.href;
+}
 if(auth){
   ReactDOM.render(
     <React.StrictMode>
