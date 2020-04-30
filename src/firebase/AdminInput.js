@@ -90,7 +90,7 @@ class AdminInput extends React.Component{
                     //     window.location.reload()
                     //  })
                     this.record={...this.emptyRecord};
-                
+                    this.uploadedImages =[];
                     this.setState({
                         inputCaption:"",
                         nameCaption:"",
@@ -119,7 +119,7 @@ class AdminInput extends React.Component{
                 //     window.location.reload()
                 //  })
                 this.record={...this.emptyRecord};
-                
+                    this.uploadedImages=[];
                     this.setState({
                         inputCaption:"",
                         nameCaption:"",
