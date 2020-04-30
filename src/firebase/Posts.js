@@ -35,10 +35,10 @@ class Posts extends React.Component{
                 (
                     <Grid item key={idx}>
                 <SimpleCard>
-                    <Grid container direction="column" spacing="3">
+                    <Grid container direction="column" spacing="1">
                     
                         <Grid item>
-                        <Typography align="left" variant="h5">
+                        <Typography align="left" variant="h6">
                         <Box fontWeight="fontWeightBold" m={1}>
                             {record[1].author}
                         </Box>
@@ -49,7 +49,7 @@ class Posts extends React.Component{
                         {/* <img src={record[1].file} style={{maxWidth:"100%", height:"auto"}} alt=""></img>  */}
                         </Grid>
                         <Grid item>
-                            <Typography style={{fontSize:"1.2rem"}}>{record[1].title}</Typography>
+                            <Typography style={{fontSize:"0.9rem"}}>{record[1].title}</Typography>
                         </Grid>
                         
                     </Grid>

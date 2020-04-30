@@ -37,7 +37,7 @@ class ImageViewer extends Component {
             }>
                 {this.props.images.map((src, idx)=>{
                     return(
-                        <div  key={idx} style={{height:"60vh", backgroundColor:"#FFFFFF", justifyContent:"center", padding:"1rem"}}> 
+                        <div  key={idx} style={{height:"55vh", backgroundColor:"#FFFFFF", justifyContent:"center", padding:"1rem"}}> 
                             {/* {src.width>src.height
                             ?
                             <img src={src}></img>
