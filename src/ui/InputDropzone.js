@@ -51,7 +51,6 @@ export default function InputDropzone(props) {
           await canvas.toBlob(async (blob)=>{
               tempFiles.push(blob)
               if(idx===imgFiles.length-1){
-                setFiles(tempFiles)
                 props.callback(tempFiles)
                 console.log(tempFiles)
               }
@@ -64,7 +63,6 @@ export default function InputDropzone(props) {
     
   }
 
-  const [files, setFiles] = useState([]);
   const {getRootProps,
     getInputProps,
     isDragActive,
@@ -73,7 +71,6 @@ export default function InputDropzone(props) {
     accept: 'image/*',
     onDrop: acceptedFiles => {
       imageProcess(acceptedFiles)
-      console.log(files)
       
       
     }
